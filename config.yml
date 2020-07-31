@@ -1,0 +1,18 @@
+title: Poker on the console
+description: >-
+  Create a simple Poker game using https://www.pokerapi.dev/ while reviewing
+  basic JS fundamentals and learning ES6+ and more advanced JS concepts.
+template:
+  repo: poker-on-the-console-template
+  name: poker-on-the-console
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
