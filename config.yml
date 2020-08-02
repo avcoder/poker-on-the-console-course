@@ -5,6 +5,7 @@ description: >-
 template:
   repo: poker-on-the-console-template
   name: poker-on-the-console
+  description: Repo of simple Poker game using pokerapi.dev
 before:
   - type: createIssue
     title: Welcome!
@@ -12,7 +13,9 @@ before:
 steps:
   - title: First step
     description: The first step in your course
-    event: issues.assigned
+    event: issue_comment.created
     link: '{{ repoUrl }}'
     actions:
       - type: closeIssue
+      - type: gate
+    video: 'https://www.youtube.com/embed/1gX81kmCpVg'
